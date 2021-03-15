@@ -1,0 +1,38 @@
+<table border=1>
+  <thead style="text-align:center"> 
+    <tr style="height:50px">
+      <td>
+        <b>Nama</b>
+      </td>
+      <td>
+        <b>Email</b>
+      </td>
+      <td>
+        <b>Address</b>
+      </td>
+      <td>
+        <b>Aksi </b>
+        </td>
+    </tr>
+  </thead>
+  <tbody style="text-align:center"s>
+    <tr *ngFor='let n of dataUsers'>
+      <td>
+        {{n.name}}
+      </td>
+      <td>
+        {{n.email}}
+      </td>
+      <td>
+        {{n.address}}
+      </td> 
+      <td>
+        
+        <button (click)="hapus(n)">
+          <img src="/assets/delete.png" style="height: 50px;
+          width: 50px;"/>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
